@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prernatirth | प्रेरणातीर्थ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fffaf2;
+color:#222;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.9);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 2px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#d97706;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 35px;
+background:#ff9933;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+}
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+color:#d97706;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.mission{
+background:linear-gradient(135deg,#ffedd5,#fff);
+}
+
+.quote{
+background:#fff7ed;
+border-left:5px solid orange;
+padding:25px;
+font-style:italic;
+margin-top:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.contact{
+background:#111827;
+color:white;
+text-align:center;
+}
+
+.contact a{
+color:#ffb74d;
+text-decoration:none;
+}
+
+footer{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.4rem;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🪔 प्रेरणातीर्थ</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#mission">Mission</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>प्रेरणातीर्थ</h1>
+
+<p>
+Thought • Values • Social Transformation
+<br>
+विचार, संस्कार आणि समाजपरिवर्तन
+</p>
+
+<a href="#about" class="btn">Explore</a>
+
+</div>
+
+</section>
+
+<section id="about" class="reveal">
+
+<h2 class="title">About Prernatirth</h2>
+
+<div class="about-grid">
+
+<div class="card">
+
+<h3>Our Vision</h3>
+
+<p>
+
+Creating a thoughtful society through
+awareness, education and values.
+
+समाजात सकारात्मक विचार, जागृती
+आणि संस्कार निर्माण करणे.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Founder</h3>
+
+<p>
+
+Dr. Ram Kataria is a social thinker,
+speaker and reformer dedicated to
+society and youth development.
+
+</p>
+
+<div class="quote">
+
+"समाजाची खरी प्रगती विचारांच्या
+परिवर्तनातून होते."
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="mission" class="mission reveal">
+
+<h2 class="title">Mission & Vision</h2>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Social Awareness</h3>
+<p>Creating awareness on social issues.</p>
+</div>
+
+<div class="card">
+<h3>Youth Development</h3>
+<p>Empowering youth through values.</p>
+</div>
+
+<div class="card">
+<h3>Sant Vichar</h3>
+<p>Promoting teachings of saints.</p>
+</div>
+
+<div class="card">
+<h3>Constructive Dialogue</h3>
+<p>Encouraging thoughtful discussion.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="reveal">
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="hero.jpg">
+
+<img src="hero.jpg">
+
+<img src="hero.jpg">
+
+</div>
+
+</section>
+
+<section class="reveal">
+
+<h2 class="title">Inspirations</h2>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Sant Dnyaneshwar</h3>
+<p>Knowledge and spirituality.</p>
+</div>
+
+<div class="card">
+<h3>Sant Tukaram</h3>
+<p>Devotion and social awareness.</p>
+</div>
+
+<div class="card">
+<h3>Swami Vivekananda</h3>
+<p>Youth empowerment and nation building.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title" style="color:white">
+Contact Us
+</h2>
+
+<p>📍 Kadus, Pune, Maharashtra</p>
+
+<p>📧 prernatirth@gmail.com</p>
+
+<p>📞 755566645</p>
+
+<p style="margin-top:20px">
+
+<a href="https://www.instagram.com/preranatirth">
+Instagram
+</a>
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Prernatirth |
+All Rights Reserved
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".reveal")
+.forEach(sec=>{
+
+let top=sec.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+sec.classList.add("active");
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
